@@ -1,0 +1,40 @@
+html {
+font-size: 16px;
+align-content: center;
+}
+body {
+line-height: 1;
+}
+div {
+  display: block;
+  border: solid 0.25rem black;
+}
+header {
+  height: 4rem;
+  display: flex;
+  margin: 0;
+  width: 100%;
+  border: solid 0.25rem black;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content {
+  height: 2rem;
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  display:inline-flex;
+
+}
+.content img {
+  height: 2rem;
+}
+.menu {
+  text-align: center;
+  font-size: 1.5rem;
+  display:inline-block;
+}
+li {
+  align-content: center;
+  display: inline;
+}
