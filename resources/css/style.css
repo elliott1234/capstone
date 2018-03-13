@@ -1,6 +1,7 @@
 html {
 font-size: 16px;
 align-content: center;
+font-family: sans-serif;
 }
 body {
 line-height: 1;
@@ -22,19 +23,101 @@ header .content {
   height: 2rem;
   padding-left: 1.5rem;
   font-size: 1.5rem;
-  text-align: center;
+  align-items: center;
   display:inline-flex;
 
 }
 .content img {
-  height: 2rem;
+  height: 3rem;
 }
-.menu {
-  text-align: center;
+#colmar {
+  color: rgb(64, 64, 64);
+  font-weight: bold;
+
+}
+#academy {
+  color: rgb(191, 191, 191);
+  font-weight: lighter;
+}
+
+.menu ul {
   font-size: 1.5rem;
-  display:inline-block;
+  height: 4em;
+  margin-right: 1rem;
 }
-li {
-  align-content: center;
-  display: inline;
+nav {
+  margin-top: 4rem;
+  font-size: 0.75rem;
+}
+nav a {
+  color: rgb(64, 64, 64);
+  text-decoration: none;
+  }
+.menu li {
+display: inline;
+}
+#border {
+  border-right: solid 1em;
+  border-color: rgb(173, 255, 228);
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(190, 190, 190);
+
+}
+.main-content .image-container {
+  width: 60%;
+  padding: 2em 1.5em;
+}
+.main-content .image-container img {
+  width: 100%;
+}
+.main-headline {
+  width: 40%;
+  padding-left: 0.5em;
+}
+.main-headline h1 {
+  font-size: 3em;
+  font-weight: 800;
+  padding-top: 3em;
+  color: rgb(64, 64, 64);
+
+}
+.main-headline h2 {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: rgb(64, 64, 64);
+  padding-top: 1.5em;
+}
+.main-headline button {
+    background-color: rgb(64, 64, 64) ;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    width: 80%;
+    margin-top: 1.5em;
+}
+.middle-content .image-container {
+  width: 60%;
+  padding: 2em 1.5em;
+}
+.middle-content .image-container img {
+  width: 100%;
+}
+.middle-content h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-top: 2em;
+  color: rgb(64, 64, 64);
+}
+.middle-content p {
+  font-size: 1.4em;
+  color: rgb(64, 64, 64);
+  padding-top: 2em;
+  opacity: 0.75;
 }
