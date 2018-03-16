@@ -8,7 +8,7 @@ line-height: 1;
 }
 div {
   display: block;
-  border: solid 0.25rem black;
+  border: solid 0.2rem black;
 }
 header {
   height: 4rem;
@@ -59,11 +59,17 @@ display: inline;
   border-right: solid 1em;
   border-color: rgb(173, 255, 228);
 }
+.icon {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
 .main-content {
   display: flex;
   flex-direction: row;
   background-color: rgb(218, 218, 218);
-
 }
 .main-content .image-container {
   width: 60%;
@@ -101,6 +107,8 @@ display: inline;
     width: 80%;
     margin-top: 1.5em;
 }
+
+
 .middle-content {
   display: flex;
   }
@@ -172,19 +180,19 @@ padding-top: 0.9rem;
   color: rgb(51, 153, 255);
   font-size: 1.1em;
 }
+
+
 .courses {
   text-align: center;
   padding-left: 4.5rem;
   padding-right: 2.5rem;
-  margin-top: 0;
   background-color: rgb(218, 218, 218);
 }
 .courses h1 {
-  margin-top: 0;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   font-size: 2.5em;
   font-weight: 800;
-  padding-top: 2em;
   color: rgb(64, 64, 64);
 }
 .contents {
@@ -194,6 +202,7 @@ padding-top: 0.9rem;
   height: auto;
   padding-bottom: 2rem;
 }
+
 .contents-image {
   width: 30%;
   margin-top: 2rem;
@@ -231,18 +240,46 @@ padding-top: 0.9rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.bottom-content {
-  display: flex;
+.courses .blocks {
+  width: 100%;
+  align-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.courses .blocks .title {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(218, 218, 218);
+  color: rgb(64, 64, 64);
+  width: 90%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
   }
+
+
+
+.bottom h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-top: 1em;
+    color: rgb(64, 64, 64);
+    text-align: center;
+  }
+  .bottom-content {
+    display: flex;
+    }
 .bottom-content .video-container {
   width: 60%;
   flex: 3;
   padding: 2rem 1.5rem 1.5rem 1.5rem;
- height: auto:
+  height: auto;
 }
 .bottom-content .video-container video {
  width: 100%;
-
 }
 .images2 {
   display: flex;
@@ -250,14 +287,13 @@ padding-top: 0.9rem;
   flex: 1;
   min-width:39%;
   height:auto;
-  padding-top: 1rem;
+  padding-top: 2rem;
   }
 .images2 .images-small {
   display: flex;
   justify-content: center;
   align-content: center;
   height:auto;
-
 }
 .images2 .images-small:first-child{
   background-color: rgb(218, 218, 218);
@@ -271,12 +307,127 @@ padding-top: 0.9rem;
   font-size: 1.75em;
   font-weight: bold;
   color: rgb(64, 64, 64);
-  padding-top: 2em;
+  text-align: left;
+  padding-top: 1.5rem;
 }
 .video-container p{
   font-size: 1.2em;
   color: rgb(64, 64, 64);
-  padding-top: 1.5em;
+  padding-top: 0.5rem;
   padding-bottom: 2em;
   opacity: 0.75;
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  font-size: 1.2em;
+  color: rgb(64, 64, 64);
+  opacity: 0.75;
+}
+#terms {
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  font-size: 1.2em;
+  color: rgb(64, 64, 64);
+  opacity: 0.75;
+}
+
+
+
+@media only screen and (max-width: 725px){
+  header nav {
+    display: none;
+    }
+    header .content {
+      display: none;
+    }
+    header {
+      height: 64px;
+    }
+    .main-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      }
+    .main-content .image-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0rem;
+        }
+    .main-content .main-headline {
+      text-align: left;
+      width: 100%;
+      padding-left: 1rem;
+        }
+     .main-content .main-headline h1 {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+        }
+     .main-content .main-headline h2 {
+      padding-bottom: 1.5rem;
+        }
+     .main-headline button {
+       margin-bottom: 2rem;
+       margin-top:  0rem;
+        }
+     .middle-content .image-container {
+       display: none;
+     }
+     .middle-content .images-small {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+       background-color: none;
+     }
+     .middle-content .images-small img {
+       padding: 1rem 1rem 1rem 1rem;
+       width: 80%;
+       height: 50%;
+     }
+     .middle-content .images-small:last-child {
+       background-color: white;
+     }
+     .courses .contents {
+       display: none;
+     }
+     .courses {
+       width: 80%;
+       background-color: white;
+       align-content: center;
+     }
+     .bottom .bottom-content .images2 {
+       display: none;
+     }
+     .bottom .bottom-content .video-container h1 {
+       display: none;
+     }
+     .bottom .bottom-content .video-container p {
+       display: none;
+     }
+     footer {
+       margin-top: 1.5rem;
+     }
+     footer #terms {
+       display: none;
+     }
+     footer p {
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+     }
+  }
+  @media only screen and (min-width: 725px){
+    header .icon {
+      display: none;
+      }
+      .courses .blocks {
+        display: none;
+      }
+    }
